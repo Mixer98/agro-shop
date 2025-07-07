@@ -24,4 +24,4 @@
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/Mixer98/agro-shop.git
+   git clone https://github.com/Mixer98/agro-shop.git pp
