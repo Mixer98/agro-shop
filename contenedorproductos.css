@@ -1,0 +1,76 @@
+.contenedorproductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta el tamaño mínimo de las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px; /* Espacio interno del contenedor */
+
+}
+
+.producto {
+    
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    justify-content: space-between; /* Espacia los elementos entre el inicio y el fin */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height :270px;
+
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(55, 45, 39);
+    background-color: rgba(240, 234, 210, 0.7);
+    backdrop-filter: blur(15px);
+    
+}
+
+
+.producto-nombre {
+    font-size: 1.2em;
+    margin: 10px 0;
+    max-height: 3em; /* Limita el alto máximo */
+    overflow: hidden; /* Oculta el contenido que se salga del área visible */
+    display: -webkit-box; /* Soporte para clamping en Webkit (Chrome, Safari) */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.producto-precio {
+    font-size: 1.1em;
+    color: #333;
+    margin: 5px 0; /* Ajustar el margen para dar espacio */
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between; /* Distribuye los botones en los extremos */
+    margin-top: 10px; /* Espacio superior para separar de la sección anterior */
+    padding: 0 10px; /* Agrega un padding horizontal para acercar los botones */
+}
+.btn {
+    background-color: transparent; /* Fondo transparente para el botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+
+.icono-img {
+    width: 24px; /* Ajusta el tamaño del icono */
+    height: 24px;
+}
+
+.btn:hover .icono-img {
+    opacity: 0.8; /* Efecto al pasar el mouse sobre el ícono */
+}
+
+
+.producto-imagen {
+    width: 100%;
+    max-width: 150px; /* Ancho máximo permitido */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto; /* Centro horizontal */
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,65 @@
+body {
+    background-image: url(images/fondito13.jpg);
+    margin: 0; /* Eliminar el margen por defecto */
+}
+
+.producto {
+    width: 100%; /* Hacer que el contenedor ocupe el 100% del ancho */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(55, 45, 39);
+
+    display: flex; /* Usar flexbox para una mejor organización */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: flex-start; /* Alinear elementos al principio */
+    padding: 20px; /* Añadir espacio interior */
+    margin-bottom: 20px; /* Espacio entre productos */
+}
+
+.imagenproducto {
+    height: 10px;
+    width: auto; /* Mantener la proporción de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.informacion { /* Estilo para la información del producto */
+    flex: 1; /* Permitir que la información ocupe espacio */
+    display: flex; /* Usar flexbox para centrar elementos */
+    flex-direction: column; /* Organizar elementos en columna */
+    align-items: flex-start; /* Alinear elementos a la izquierda */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.descripcion {
+    margin: 10px 0; /* Espacio alrededor de la descripción */
+}
+
+/* Contenedor para los botones */
+.boton-container {
+    display: flex; /* Usar flexbox para los botones */
+    gap: 10px; /* Espacio entre botones */
+    margin-left: auto; /* Empujar el contenedor de botones hacia la derecha */
+}
+
+.boton {
+    padding: 10px 20px; /* Espacio interior en los botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.boton:hover {
+    background-color: #45a049; /* Color al pasar el ratón */
+}
+
+/* Estilos adicionales para el contenedor de productos */
+#productos {
+    display: flex;
+    flex-direction: column; /* Organizar productos en columnas */
+    align-items: center; /* Centrar productos */
+}

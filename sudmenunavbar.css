@@ -1,0 +1,76 @@
+/* Menú desplegable de "Categorías" */
+.dropdown-content {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute;
+    background-color: rgb(240,234,210);
+    z-index: 1;
+    top: 100%;
+    left: 40px;
+    min-width: 120px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    /* Añadir transiciones */
+    opacity: 0;
+    transform: scale(0.95); /* Ligeramente más pequeño al estar oculto */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content.show-menu {
+    display: block !important;
+    opacity: 1;
+    transform: scale(1); /* Tamaño completo */
+}
+
+/* Enlaces del menú desplegable de "Categorías" */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(108,88,76);
+    white-space: nowrap;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Menú desplegable de usuario */
+#userMenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(240,234,210);
+    top: 100%;
+    left: -85px;
+    min-width: 150px;
+    z-index: 1;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+
+    /* Añadir transiciones */
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#userMenu.show-menu {
+    display: block !important;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Enlaces del menú desplegable de usuario */
+#userMenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(108,88,76);
+    border-radius: 5px;
+}
+
+#userMenu a:hover {
+    background-color: #f1f1f1;
+}

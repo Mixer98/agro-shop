@@ -1,0 +1,211 @@
+.contenedorproductos {
+    display: grid;
+    grid-template-columns: 1fr; /* Esto asegura una sola columna que ocupa todo el ancho */
+    grid-auto-rows: 150px; /* Altura fija para cada fila */
+    gap: 20px; /* Espacio entre filas */
+    padding: 20px;
+
+    height: auto;
+}
+
+.producto {
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    gap: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(55, 45, 39);
+    background-color: rgba(240, 234, 210, 0.9);
+}
+
+
+
+.producto-imagen {
+    width: 80px; /* Ancho fijo para uniformidad */
+    height: 100px; /* Altura fija para mantener el mismo tamaño */
+    object-fit: cover; /* Recorta la imagen para ajustarse a las dimensiones */
+    margin: 20px ;
+    background-color: rgba(0, 0, 0, 0);
+
+
+}
+
+.producto-nombre {
+    font-size: 1.2em;
+    margin: 10px 0;
+
+}
+
+.producto-precio {
+    font-size: 1.1em;
+    color: #333;
+    margin: 5px 0; /* Ajustar el margen para dar espacio */
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between; /* Distribuye los botones en los extremos */
+    margin-top: 10px; /* Espacio superior para separar de la sección anterior */
+    padding: 0 10px; /* Agrega un padding horizontal para acercar los botones */
+    margin-left: -30px;
+}
+.btn {
+    background-color: transparent; /* Fondo transparente para el botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+
+.icono-img {
+    width: 24px; /* Ajusta el tamaño del icono */
+    height: 24px;
+}
+
+.btn:hover .icono-img {
+    opacity: 0.8; /* Efecto al pasar el mouse sobre el ícono */
+}
+
+
+/* Estilos generales (para pantallas más pequeñas) */
+.contenedorproductos {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    grid-auto-rows: 150px;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+}
+
+/* Diseño para pantallas de 926px o más */
+@media (max-width: 912px) {
+    .contenedorproductos {
+        grid-template-columns: repeat(4, 1fr); /* Cambia a dos columnas */
+        grid-auto-rows: auto
+    }
+
+    .producto {
+        flex-direction: column; /* Alinea los elementos de forma vertical dentro de cada producto */
+        align-items: center;
+        text-align: center;
+
+        height: auto;
+    }
+
+    .producto-imagen {
+        width: 100px; /* Ajusta tamaño de la imagen si es necesario */
+        height: 120px;
+    }
+
+    .botones {
+        justify-content: center; /* Centra los botones debajo del contenido */
+        margin-left: 0;
+    }
+}
+
+
+
+
+@media (max-width: 906px) {
+    .contenedorproductos {
+        grid-template-columns: repeat(3, 1fr); /* Cambia a dos columnas */
+        grid-auto-rows: auto
+    }
+
+    .producto {
+        flex-direction: column; /* Alinea los elementos de forma vertical dentro de cada producto */
+        align-items: center;
+        text-align: center;
+
+        height: auto;
+    }
+
+    .producto-imagen {
+        width: 100px; /* Ajusta tamaño de la imagen si es necesario */
+        height: 120px;
+    }
+
+    .botones {
+        justify-content: center; /* Centra los botones debajo del contenido */
+        margin-left: 0;
+
+
+    }
+
+}
+
+
+
+@media (max-width: 652px) {
+
+    .contenedorproductos {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+        grid-auto-rows: auto
+    }
+
+    .producto {
+        flex-direction: column; /* Alinea los elementos de forma vertical dentro de cada producto */
+        align-items: center;
+        text-align: center;
+
+        height: auto;
+    }
+
+    .producto-imagen {
+        width: 100px; /* Ajusta tamaño de la imagen si es necesario */
+        height: 120px;
+    }
+
+    .botones {
+        justify-content: center; /* Centra los botones debajo del contenido */
+        margin-left: 0;
+
+
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    .contenedorproductos {
+        grid-template-columns: repeat(1, 1fr); /* Cambia a dos columnas */
+        grid-auto-rows: auto
+    }
+
+}
+
+
+
+
+@media (max-width: 340px) {
+    .producto {
+        font-size: 0.9em; /* Reduce el tamaño del texto en el contenedor */
+        padding: 10px; /* Reduce el padding si es necesario */
+    }
+
+    .producto-imagen {
+        width: 60px; /* Reduce el ancho de la imagen */
+        height: 80px; /* Reduce la altura de la imagen */
+    }
+
+    .producto-nombre {
+        font-size: 1em; /* Ajusta el tamaño del nombre del producto */
+    }
+
+    .producto-precio {
+        font-size: 0.9em; /* Ajusta el tamaño del texto del precio */
+    }
+
+    .botones {
+        padding: 0 5px; /* Reduce el padding entre los botones */
+    }
+
+    .icono-img {
+        width: 20px; /* Reduce el tamaño de los iconos */
+        height: 20px;
+    }
+}

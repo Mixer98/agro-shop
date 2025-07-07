@@ -1,0 +1,117 @@
+.slider {
+    grid-column: 2/3;
+
+    grid-row: inherit;
+    position: relative;
+    overflow: hidden;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+
+    width: 100%;
+
+    margin-left: -180px;
+    
+
+}
+
+.slide {
+
+    width: 100%; /* Cada slide ocupará el ancho completo de la ventana */
+    height: 100vh; /* Cada slide ocupará la altura completa de la ventana */
+    display: flex;
+    flex-direction: row; /* Alineamos los elementos en fila (imagen y párrafo uno al lado del otro) */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    font-size: 3rem;
+
+    
+    padding: 20px;
+}
+
+.slide img {
+    width: 280px; /* Ajustamos el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* La imagen no debe exceder su contenedor */
+
+
+    filter: drop-shadow(0px 0px 50px black);
+    backdrop-filter: blur(1px);
+
+}
+
+.slide p {
+
+
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(240, 234, 210);
+    font-size: 25px; /* Ajustamos el tamaño de la fuente */
+    line-height: 1.6; /* Espaciado entre las líneas del texto */
+    max-width: 600px; /* Limita el ancho del párrafo */
+
+
+    padding: 00px; /* Añadimos espacio interno alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+        text-shadow: 
+      0px 0px 15px rgba(0,0,0);
+
+      backdrop-filter: blur(5px);
+
+
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0,0);
+    border: none;
+
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev img, .next img{
+    width: 45px;
+}
+
+
+.prev {
+    left: 350px;
+
+
+}
+
+.next {
+    right: 10px;
+}
+
+@media (max-width: 1200px) {
+
+
+
+    .slide img {
+        width: 350px; /* Ajustamos el tamaño de la imagen */
+        height: auto
+    
+    }
+
+    p {
+        width: 300px;
+        max-height: 500px;   /* Altura máxima del párrafo */
+        overflow: auto;   
+    }
+
+
+
+    #flecha1, #flecha2 {
+        display: none;
+        
+        }
+
+}

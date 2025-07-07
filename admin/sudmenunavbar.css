@@ -1,0 +1,81 @@
+.dropdown-content {
+    display: none; /* Ocultar el menú por defecto */
+    background-color:rgb(240,234,210);
+
+    top: 100%; /* Colocarlo justo debajo del enlace de "Categorías" */
+    left:55px; /* Alinearlo con el enlace */
+    min-width: 120px; /* Tamaño mínimo para que tenga una forma consistente */
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+
+}
+
+
+.dropdown-content a {
+    display: block; /* Esto asegura que cada enlace ocupe toda la línea */
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(108,88,76);
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+    border-radius: 5px;
+
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Cambia el color al pasar el mouse */
+}
+
+
+
+/* Ocultar el menú por defecto */
+#userMenu {
+    display: none;
+    position: absolute;
+    background-color:rgb(240,234,210);
+    top: 100%; /* Justo debajo del icono de usuario */
+    left: -85px; /* Moverlo más hacia la izquierda */
+    min-width: 150px;
+    z-index: 1;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+}
+
+
+
+#userMenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(108,88,76);
+
+    border-radius: 5px;
+}
+
+/* Estilo inicial para ocultar el menú con opacidad */
+#dropdownMenu, #userMenu {
+    display: none;
+    opacity: 0;
+    transform: scale(0.95); /* Hace que el menú parezca que aparece desde un punto ligeramente reducido */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animación suave */
+}
+
+/* Cuando el menú se muestra */
+.show-menu {
+    display: block !important;
+    opacity: 1;
+    transform: scale(1); /* Regresa el tamaño a 100% */
+}
+
+
+
+
+#userMenu a:hover {
+    background-color: #f1f1f1;
+}
+#barras{
+    position: relative;  /* O 'absolute' si deseas que flote sobre otros elementos */
+    z-index: 1000;      /* Asegúrate de que sea un valor alto */
+    }

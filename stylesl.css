@@ -1,0 +1,227 @@
+* {
+    margin: 0;/*Espacio interior de un elemento, entre el borde y el contenido.*/
+    /* Hace que padding y border se incluyan en el tamaño total */
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  body {
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.117), rgba(0, 0, 0, 0)),
+      url('images/fondito.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Evita la repetición de la imagen y el degradado */
+    
+    align-items: center; /* Centra los contenedores verticalmente */
+    height: auto; /* Ocupa toda la altura de la viewport */
+
+
+
+  }
+  
+  .logo{
+    filter:drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.704));
+  }
+
+
+.logo_texto{
+
+    gap: 0px; /* Ajusta el espacio entre el logo y el texto */
+    display: flex;
+    
+    height: 85px;
+    width: 380px;
+    margin: 6px;
+    margin-bottom: 100px;
+    
+    transition:  0.3s ease-in;
+
+    text-shadow: 0px 0px 8px rgba(0, 0, 0);
+}
+
+.logo_texto:hover{
+
+  transform: scale(1.05);
+
+}
+
+
+
+
+
+h1{
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 55px;
+        font-weight: 600;
+        color: rgb(108,88,76);
+        white-space: nowrap;/*sin salto de linea*/
+        text-shadow: 
+      0px 0px 15px rgba(240, 234, 210, 0.541);
+}
+h2{
+  font-family: 'Segoe UI', sans-serif;
+  color: rgb(108,88,76);
+  font-size: 20px;
+  font-weight: normal;
+  white-space: nowrap;/*sin salto de linea*/
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+.logincont{
+  
+  background-color: rgba(186, 198, 153, 0.7);
+  border-radius: 10px;
+  width: 230px;
+  height: 272px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0,0.8);
+  backdrop-filter: blur(12px);
+  background-size: cover;
+  box-shadow: 20px;
+  transition:  0.2s ease-in;
+  margin-top: 50px;
+
+}
+
+.logincont:hover {
+ 
+  transform: scale(1.2);
+  
+}
+
+.logincont:hover h2,.logincont:hover select,.logincont:hover input, 
+.logincont:hover button,.logincont:hover a, .logincont:hover  #is 
+{
+
+  color: rgb(231, 255, 221);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+
+}
+
+.logincont:hover ~ body{
+  background: none;
+}
+
+
+
+
+select::-ms-expand {
+  display: none; /* Ocultar la flecha predeterminada de Edge */
+  border-radius: 10px;
+
+  background-color: 186, 198, 153, 0;
+  
+}
+
+select {
+    appearance: none;          /* Eliminar el estilo predeterminado */
+    -webkit-appearance: none;  /* Para Safari/Chrome */
+    -moz-appearance: none;     /* Para Firefox */
+    height: 35px;
+    width: 200px;
+    color: rgb(95, 78, 67);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(186, 198, 153, 0);
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    outline: none;
+    margin-top: 10px;
+}
+.objeto{
+
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+    height: 35px;
+    box-shadow:0ch;
+    width: 200px;
+    background-color: rgb(174, 193, 120,0.5);
+    text-align: center;
+    outline: none;
+    text-shadow: 0px,0px,15px rgba(0,0,0);
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.256);
+
+}
+#is{
+  background-color: rgb(174, 193, 120,0.5);
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  height: 35px;
+  width:90px;
+  justify-content: center;  /* Centrar horizontalmente */
+  align-items: center;
+  backdrop-filter: blur(12px);
+  color: rgb(95, 78, 67);
+
+
+}
+
+#is:hover{
+
+  background-color: rgb(108,88,76);
+  color: rgb(173,193,120);
+
+}
+
+#rg{
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+  margin-right: 8px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  height: 35px;
+  width: 85px;
+  backdrop-filter: blur(12px);
+  background-color: rgb(174, 193, 120,0.5);
+  color: rgb(95, 78, 67);
+
+  margin-right: 25px;
+
+}
+#rg:hover{
+
+  background-color: rgb(108,88,76);
+  color: rgb(173,193,120);
+}
+#rg:hover img{
+  filter: drop-shadow(0px 0px 12px rgb(255, 255, 255));
+}
+
+.icon{/*todos los iconos*/
+  width: 22px;
+  display: flex;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+#botones{
+  display: flex;
+  justify-content: center;  /* Centrar horizontalmente */
+  align-items: center; 
+  
+  margin-top: 20px;
+}
+
+.logincont input{
+  color: rgb(95, 78, 67);
+}
+
+a{
+  text-decoration: none;
+  color: rgb(95, 78, 67);
+}
+

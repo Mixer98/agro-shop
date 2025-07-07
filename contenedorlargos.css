@@ -1,0 +1,51 @@
+#contenedorlargo {
+    width: 100%;                 /* Ajusta el ancho según sea necesario */
+    padding: 20px;               /* Agrega un poco de espacio alrededor del contenedor */
+    box-sizing: border-box;      /* Asegúrate de que el padding no afecte el ancho total */
+}
+
+.container {
+    display: flex;               /* Hacer de este un contenedor flex */
+    flex-direction: column;      /* Alinear los items verticalmente dentro del contenedor */
+    width: 100%;                 /* Asegurar que el contenedor use todo el ancho */
+    margin: 0;                   /* Eliminar márgenes negativos para evitar problemas de alineación */
+}
+
+.item {
+    
+
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(55, 45, 39);
+    background-color: rgba(240, 234, 210, 0.9);
+
+
+
+    margin: 5px 0;                      /* Espacio entre items (margen vertical) */
+    padding: 10px;                      /* Espacio interno de cada item */
+    box-sizing: border-box;             /* Incluye el padding en el ancho total */
+    width: 100%;                        /* Ajustar el ancho a 100% */
+    display: flex;                      /* Usar flexbox para el contenido interno */
+    flex-wrap: wrap;                    /* Permitir que los elementos se ajusten a múltiples líneas si es necesario */
+}
+
+.info {
+    display: flex;                      /* Usar flexbox para alinear la etiqueta y el valor */
+    margin-right: 20px;                /* Espacio entre las líneas de información */
+    flex: 1;                            /* Permitir que cada bloque de info se expanda uniformemente */
+}
+
+strong {
+    margin-right: 5px;                 /* Espacio entre la etiqueta y el valor */
+}
+
+/* Para evitar que el último elemento tenga margen a la derecha */
+.info:last-child {
+    margin-right: 0;                   /* Eliminar margen derecho del último elemento */
+}
+
+
+/* Pu

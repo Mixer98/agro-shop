@@ -1,0 +1,204 @@
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Cambia el ancho a 90% para que se ajuste en pantallas pequeñas */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+
+
+    max-height: 1000px; /* Altura máxima de 800px */
+}
+
+/* Contenedor de productos */
+.product-list {
+    width: 100%;
+    max-width: 800px; /* Este es el ancho máximo para pantallas grandes */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 90vh;
+    display: flex; /* Usar flexbox para los productos */
+    flex-direction: column; /* Disposición vertical */
+}
+
+/* Estilo para cada producto */
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+    width: 80%;
+    border-radius: 5px;
+    background-color: rgba(240, 234, 210, 0.9);
+
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(55, 45, 39);
+}
+
+.product img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.product-info {
+    flex: 1;
+    min-width: 150px;
+    margin-right: 10px;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.product-info p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Estilos para la cantidad, precio y botones */
+.product-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-controls button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff00;
+    color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+.product-controls button .icon {
+
+    width: 30px;
+}
+
+.product-controls button {
+    background-color: #dc353500;
+}
+
+.product-total {
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+    min-width: 80px;
+    text-align: right;
+
+
+
+    
+}
+
+/* Contenedor del precio total y botón de compra */
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+
+    background-color: rgba(240, 234, 210, 0.9);
+
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(55, 45, 39);
+
+    border-radius: 5px;
+
+
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(55, 45, 39);
+    color:rgb(240, 234, 210);
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 800px) {
+    .container {
+       
+        width: 100%;
+
+       
+    }
+
+    .product-list {
+        width: 100%; /* Mantener el ancho del contenedor de productos al 100% */
+        
+    }
+
+    .product {
+        padding: 15px; /* Aumentar el padding en productos para mejor espaciado */
+
+        margin: 10px;
+
+    }
+
+    .product-controls {
+    display: flex;
+    align-items: center;
+
+
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+
+    }
+
+    .product-info h3 {
+        font-size: 18px; /* Aumentar el tamaño de fuente del título del producto */
+    }
+
+    .total-price {
+        font-size: 20px; /* Aumentar el tamaño de fuente del total */
+    }
+
+    .buy-button {
+        font-size: 18px; /* Aumentar el tamaño del botón */
+        padding: 12px 24px; /* Aumentar el padding del botón */
+    }
+}
+
+@media (max-width: 552px){
+
+    .container {
+
+            padding: 0px;
+                margin: 0;
+    }
+    
+}

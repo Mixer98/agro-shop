@@ -1,0 +1,573 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+
+    
+
+
+}
+
+body{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+      url('images/fondito3.jpg') ; /*Gradiante superior*/
+      background-attachment: fixed;/*Para que la imagen se quede fijada*/
+    background-size: cover; /* Imagen cubre toda la pantalla */
+    display: grid;
+
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr 38px 380px 370px auto;
+    background-repeat: no-repeat; /* Evita la repetición de la imagen y el degradado */
+}
+
+#logo-titulo{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    grid-column: 3;
+    column-gap: 6px;
+    transition:  0.1s ease-in;
+}
+
+#logo-titulo:hover{
+
+    transform: scale(1.05);
+    
+}
+
+
+
+header{
+
+    grid-column: 1/8;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+
+    
+}
+
+    #logo{
+        width: 92px;
+        height: 92px;
+
+        filter: drop-shadow(0px 0px 15px black);
+
+    }
+
+    h1{
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 55px;
+        font-weight: 600;
+        color: rgb(240,234,210);
+        white-space: nowrap;/*sin salto de linea*/
+
+        text-shadow: 0px 0px 15px rgba(0, 0, 0);
+    }
+
+
+
+.icon{/*todos los iconos*/
+    width: 25px;
+    height: auto;
+
+
+}
+
+#barras{
+    grid-column: 1/8;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 150px 0.8fr 300px  1fr 65px;
+
+    gap: 10px;
+    align-items: center;
+    height:100%;
+    width: 100%;
+}
+
+    #barrabusqueda{
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: 80% 1fr;
+
+        align-items: center;
+
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        
+        height: 100%;
+        width: 100%;
+    }
+
+    .inputbuscar{
+        padding-right: 20px;
+        grid-column: 1;
+        font-size: 25px;
+        width: 100%;
+        border: none;
+        background: none;
+        text-align: center;
+        outline: none;
+
+        color: rgb(108,88,76);
+ 
+    }
+
+    .botonbuscar{
+        background: none;
+        border: none;
+        width: 100%;
+        
+    }
+
+
+
+    
+
+
+
+
+#barrabusqueda, nav ,#barrapersonal{
+    background-color:rgb(240,234,210,1) ;
+    box-shadow: 0px 0px 20px rgba(108,88,76,9.2); /* Sombra que se expande en todos los lados */
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    color: rgb(108,88,76);
+}
+
+nav{
+    grid-column: 3/4;  
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    align-items: center;
+    border-radius: 5px;
+
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+    gap: 25px;
+    position: relative; /* Añadido para controlar el posicionamiento */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+}
+
+#barrapersonal{
+    grid-column: 5/6;
+   
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+   border-top-left-radius: 5px;
+    align-items: center;
+   border-bottom-left-radius: 5px;
+   position: relative;
+   z-index: 10; 
+}
+
+#barrapersonal a img{
+    padding-top: 6px;
+    width: 25px;
+}
+
+
+
+
+a{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(108,88,76);
+    text-decoration-line: none;
+    text-align: center;
+}
+
+
+
+
+
+
+#categoriasbarra{
+    grid-column: 1/6;
+    grid-row: 4;
+
+    display: grid;
+    background-color: rgba(0,0,0,0);
+    
+    grid-template-columns: 50% 1fr;
+
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    box-shadow: 0px 10px 16px rgb(0, 0, 0,0.3);
+    margin: 10px;
+
+    height: 100%;
+    width: auto;
+
+    margin-bottom: 10px;
+
+}
+#digital {
+    max-width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* Mantiene la proporción de la imagen */
+    border-radius: 5px;
+
+    object-fit: cover;
+}
+
+
+#categorias{
+
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: auto  auto;
+    grid-template-rows: repeat(3,1fr);
+    border-radius: 5px;
+
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+#categorias a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    height: 100%;
+    background-color: rgb(240,234,210,0.7);
+    width: 100%;
+
+
+}
+
+#categorias a:hover  {
+    background-color: rgb(240,234,210,0.6);
+    
+    backdrop-filter: blur(10px);
+
+
+}
+
+#categorias a h2{
+    font-size: 25px;
+}
+
+#categorias a img{
+    width: 50px;
+    margin: 30px;
+}
+
+@media (max-width: 964px) {
+
+
+    #categorias a h2{
+
+
+        font-size: 23px;
+    }
+
+
+}
+
+@media (max-width: 911px) {
+
+
+    #categorias a h2{
+
+
+        font-size: 23px;
+    }
+
+    #categorias a img{
+        width: 40px;
+        margin: 30px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+
+    #categorias a h2{
+
+
+        font-size: 18px;
+    }
+
+    #categorias a img{
+        width: 40px;
+        margin: 30px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    #categorias a{
+
+            width: 100%;
+        }
+
+
+    #categorias a h2{
+
+
+        font-size: 18px;
+    }
+
+    #categorias a img{
+        width: 40px;
+        margin: 20px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 795px) {
+
+    #categorias a{
+
+            width: 100%;
+        }
+
+
+    #categorias a h2{
+
+
+        font-size: 18px;
+    }
+
+    #categorias a img{
+        width: 40px;
+        margin: 10px;
+    }
+
+}
+
+
+
+
+@media (max-width: 769px) {
+
+    #categorias a{
+
+            width: 100%;
+        }
+
+
+    #categorias a h2{
+
+
+        font-size: 18px;
+    }
+
+    #categorias a img{
+        width: 40px;
+        margin: 5px;
+    }
+
+}
+
+
+
+@media (max-width: 574px) {
+
+
+
+
+    #categorias a{
+
+            width: 100%;
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    #categorias a h2{
+
+        display: none;
+        font-size: 18px;
+    }
+
+    #categorias a img{
+        width: 40px;
+        margin: 5px;
+    }
+
+}
+
+
+@media (max-width:545px) {
+
+
+    #barras{
+        display: grid;
+        grid-template-columns: 100px auto 50px;
+        gap: 0px;
+
+
+
+    }
+
+    
+    #barrabusqueda{
+        grid-column: 1/2;
+
+        box-shadow: none;
+
+        border-radius: 0px;
+        margin: 0;
+    }
+
+    #barrabusqueda button .icon{
+
+        margin-left: -10px;
+
+
+
+    }
+ 
+    nav{
+        grid-column: 2/3;  
+        margin: 0;
+
+        box-shadow: none;
+
+        border-radius: 0px;
+     }
+     
+     #barrapersonal{
+        grid-column: 3/4;
+        box-shadow: none;
+        margin: 0;
+     }
+
+}
+
+@media (max-width:545px) {
+
+
+    #barras{
+        display: grid;
+        grid-template-columns: 100px repeat(2.auto);
+        gap: 0px;
+
+
+
+    }
+
+    
+    #barrabusqueda{
+        grid-column: 1/2;
+
+
+        margin: 0;
+    }
+ 
+    nav{
+        grid-column: 2/3;  
+        margin: 0;
+     }
+     
+     #barrapersonal{
+        grid-column: 3/4;
+
+        margin: 0;
+     }
+
+}
+
+@media (max-width:497px) {
+
+
+    #barras{
+        display: grid;
+        grid-template-columns: 70px 150 auto;
+        gap: 0px;
+
+
+
+    }
+
+    nav{
+        grid-column: 2/3;  
+       gap:0px
+     }
+
+     .icon{
+
+
+        width: 20px;
+
+
+
+     }
+    
+}
+
+@media (max-width:374px){
+
+    h1{
+
+        font-size: 30px;
+    }
+
+    a{
+
+        font-size: 17px;
+    }
+
+
+    .icon{
+
+
+        width: 15px;
+
+
+
+     }
+
+}
+
+@media (max-width:354px){
+
+    #barras{
+
+            display: grid;
+            grid-template-columns: 70px 220px 1fr; 
+            gap: 0px;
+
+
+    }
+
+}
+
+
+#barras {
+    position: relative;  /* O 'absolute' si deseas que flote sobre otros elementos */
+    z-index: 1000;      /* Asegúrate de que sea un valor alto */
+  
+}
+
+/* Asegúrate de que los submenús también tengan un z-index alto */
+.submenu {
+    position: absolute;   /* Asegúrate de que el submenú se posicione correctamente */
+    z-index: 1001;       /* Debe ser mayor que el z-index del nav */
+}
+
