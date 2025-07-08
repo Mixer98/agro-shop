@@ -1,15 +1,10 @@
 <?php
 
-    function conectar(){ 
-
-    $host= "localhost";
-    $usuario="root";
-    $clave="";
-    $bd="agroshop";
-    $conectar=mysqli_connect($host, $usuario, $clave,$bd);
-    return $conectar;
+    function conectar() {
+    require_once 'conexion.php'; // Incluye la conexión solo una vez
+    return $conexion; // Retorna la conexión creada en conexion.php
     }
-
+    
 function consultar($id, $tabla, $columna) { 
     $conexion = conectar(); // Llamar a la función de conexión
 
