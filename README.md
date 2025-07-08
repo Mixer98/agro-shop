@@ -15,6 +15,11 @@ Backend: PHP
 Base de datos: MySQL
 Servidor local: XAMPP
 
+## 🌐 Proyecto desplegado
+
+Puedes ver el sitio funcionando aquí 👉 [AgroShop Web](http://proyecto-agroshop.whf.bz)
+
+
 ## 🎥 Demo del Proyecto
 
 [![AgroShop Video](https://img.youtube.com/vi/Z2i82MJGxlo/0.jpg)](https://youtu.be/Z2i82MJGxlo)
