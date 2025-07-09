@@ -1,5 +1,5 @@
 🌱 Agro Shop
-Agro Shop es una aplicación web desarrollada como proyecto productivo para la etapa práctica del Técnico en Desarrollo de Software del SENA (Centro Nacional de Hotelería, Turismo y Alimentos - CENAT). El sistema está orientado a la gestión y comercialización de productos agropecuarios de manera eficiente y accesible.
+Agro Shop es una aplicación web desarrollada como proyecto productivo para la etapa práctica del Técnico en Desarrollo de Software del SENA. El sistema está orientado a la gestión y comercialización de productos agropecuarios de manera eficiente y accesible.
 
 🚀 Características
 Registro y autenticación de usuarios.
