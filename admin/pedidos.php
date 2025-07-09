@@ -65,6 +65,16 @@ $resultadoPedidos = mysqli_query($conexion, $queryPedidos);
 
                  }
 
+                  @media (max-width:974px) {
+                        table {
+
+                            grid-column: 1/6;
+                            display: block;
+                            overflow-x: auto;
+                            white-space: nowrap;
+
+                        }
+                    }
 
         </style>
 

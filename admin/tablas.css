@@ -9,6 +9,7 @@ table {
     border-spacing: 8px; /* Ajusta el espaciado entre celdas */
     margin: 0 auto; /* Centra la tabla */
     max-width: 100%; /* Previene que la tabla se expanda más allá del contenedor */
+    border-collapse: collapse;
 }
 
 th, td {
@@ -23,6 +24,7 @@ th, td {
     width: auto; /* Permite que el ancho de las celdas se ajuste automáticamente */
 
 }
+
 
 /* Hover aplicado solo a la fila */
 tr:hover {
