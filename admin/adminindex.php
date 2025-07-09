@@ -18,9 +18,9 @@ verificarsecionAdministrativa();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="stylesheet" href="barras.css">
+    
     <link rel="stylesheet" href="sudmenunavbar.css">
-    <link rel="stylesheet" href="carrusel.css">
+    
     <link rel="stylesheet" href="tablas.css">
 
     <link rel="stylesheet" href="../footer.css">
@@ -58,6 +58,8 @@ verificarsecionAdministrativa();
 
 
 </style>
+     <link rel="stylesheet" href="barras.css">
+    <link rel="stylesheet" href="carrusel.css">
 
     <title>Sesion Administrativa</title>
     <header>

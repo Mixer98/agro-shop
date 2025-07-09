@@ -266,4 +266,93 @@ a{
 }
 
 
+@media (max-width: 731px){
 
+    body{
+
+        display: grid;
+
+        grid-template-rows: 1fr 20px 380px auto 170px;
+
+        row-gap: 10px;
+
+    }
+
+
+
+
+       #barras{
+        display: grid;
+
+        gap: 0px;
+        grid-template-columns: 20% auto auto;
+       
+
+       
+    }
+
+    
+     #barras nav{
+
+        gap: 2px;
+        grid-column: 2;
+
+     }
+
+    #barrabusqueda button .icon{
+
+        margin-left: -10px;
+
+
+
+    }
+
+
+     #barrapersonal{
+
+        grid-column: 3;
+
+     }
+
+
+
+}
+
+
+@media (max-width:  543px) {
+
+
+    body h1{
+
+        font-weight: 400;
+        font-size: 35px;
+    }
+    
+}
+@media (max-width:  508px) {
+
+     #barras .icon{
+
+        width: 18px;
+
+     }
+
+     nav a{
+
+        font-size: 10px;
+
+     }
+
+}
+
+@media (max-width: 331px) {
+
+    body h1{
+
+        font-weight: 400;
+        font-size: 30px;
+        white-space: pre-line;
+        margin: 0;
+    }
+    
+}

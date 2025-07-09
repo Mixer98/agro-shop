@@ -48,6 +48,54 @@
         grid-row: 4;
         }
 
+
+    @media (max-width:974px) {
+        table {
+
+            grid-column: 1/6;
+        }
+    }
+
+
+    @media (max-width:714px) {
+        table {
+
+            
+        }
+
+        th, td {
+             padding: 0px;
+
+        }
+    }
+      @media (max-width:590px) {
+        table {
+
+            
+        }
+
+        th, td {
+             padding: 0px;
+
+        }
+
+
+        .iconos {
+            width: 14px;
+            filter: drop-shadow(0px 0px 100px rgb(240, 234, 210));
+        }
+
+
+        tr th {
+
+            font-size: 8px;
+        
+        }
+    }
+
+
+
+
 </style>
 
 
