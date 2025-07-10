@@ -167,9 +167,8 @@ button {
 
     
     #contenedor_direccion{
-        width: 100%;
-
-        max-width: 100%;
+        width: 100vh;
+        max-width:110%;
         border-radius: 0px;
         background-color: rgba(108, 88, 76, 0.5);
         height: 350px;

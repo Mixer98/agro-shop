@@ -146,6 +146,44 @@ button {
 }
 
 
+@media (max-width: 550px) {
+
+
+
+    body{
+
+        padding: 0px;
+    }
+
+    .container{
+        width: 100%;
+
+        max-width: 100%;
+        border-radius: 0px;
+
+
+        backdrop-filter: blur(5px);
+    }
+
+    
+    #contenedor_direccion{
+        width: 100vh;
+        max-width:110%;
+        border-radius: 0px;
+
+        height: 350px;
+        padding: 5px;
+        backdrop-filter: blur(5px);
+    }
+
+    #direccion{
+
+        width: 80%;
+
+
+    }
+}
+
 </style>
 
 

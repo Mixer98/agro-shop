@@ -18,6 +18,8 @@ $id = $_POST['id'];
         body {
             font-family: Arial, sans-serif;
             background-image: url(../images/fondito.jpg);
+
+            background-attachment: fixed;/*Para que la imagen se quede fijada*/
             background-size: cover;
             margin: 0;
             padding: 0;
@@ -137,6 +139,57 @@ $id = $_POST['id'];
             margin-right: 20px;
 
         }
+
+        @media (max-width: 702px) {
+
+            .container{
+                grid-template-columns: auto;
+
+                grid-template-rows: auto auto auto;
+            }
+
+            .anterior {
+                
+                grid-column: 1;
+                grid-row: 1;
+                display: flex ;
+                align-content: center;
+                justify-content: center;
+
+                height: auto;
+
+            }
+
+            .upload-form{
+
+                grid-column: 1;
+                grid-row: 2;
+
+            }
+
+            .info-container{
+
+                grid-column: 1;
+
+                grid-row: 3;
+
+            }
+
+            body{
+                height: auto;
+            }
+
+
+            .container div, .upload-form {
+
+                background-color: rgba(108, 88, 76, 0.5);
+                backdrop-filter: blur(1px);
+
+            }
+        }
+
+
+
     </style>
 </head>
 <body>

@@ -29,8 +29,6 @@ verificarsecionAdministrativa();
         </div>
     </header>
 
-
-
   <style>
 
 
@@ -144,7 +142,7 @@ verificarsecionAdministrativa();
             grid-column: span 2;
         }
 
-
+        
 
 
   </style>

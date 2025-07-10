@@ -187,6 +187,66 @@ $id = $_POST['id'];
 
         }
 
+        @media (max-width: 731px) {
+            
+
+            img {
+                width: 235px;
+                height: auto;
+
+            }
+
+            .details h3{
+
+                font-size: 14px;
+
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .top-section {
+
+
+               flex-direction: column;
+               align-items: center;
+    
+            }
+
+
+            .details h3{
+
+                font-size: 24px;
+
+
+            }
+            
+        }
+        @media (max-width: 425px){
+
+
+            .container {
+
+                margin: 0px
+            }
+
+            body{
+
+                padding: 0px;
+            }
+
+            .container {
+                background-color: rgba(108, 88, 76,0.5);
+
+                backdrop-filter: blur(2px);
+            }
+
+
+        }
+
+
+        
+
 
     </style>
 </head>
