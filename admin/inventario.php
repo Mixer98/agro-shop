@@ -115,7 +115,7 @@
     <?php 
     require 'funciones.php';
 
-    $sql = "SELECT * FROM Producto"; // Asegúrate de que 'Producto' es el nombre correcto de tu tabla
+    $sql = "SELECT * FROM producto"; // Asegúrate de que 'Producto' es el nombre correcto de tu tabla
     $resultado = conectar()->query($sql);
 
     while ($mostrar = $resultado->fetch_assoc()) {
