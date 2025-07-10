@@ -9,7 +9,8 @@ table {
     border-spacing: 8px; /* Ajusta el espaciado entre celdas */
     margin: 0 auto; /* Centra la tabla */
     max-width: 100%; /* Previene que la tabla se expanda más allá del contenedor */
-    border-collapse: collapse;
+    border-collapse: separate; /* Permite el espaciado entre celdas */
+   
 }
 
 th, td {
@@ -86,7 +87,7 @@ td button {
                         grid-column: 1/6;
                         display: block;
                         overflow-x: auto;
-                        white-space: nowrap;
+                        
 
                     }
                 }
