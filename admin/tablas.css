@@ -78,3 +78,15 @@ td button {
         font-size: 13px; /* Ajusta el tamaño de la fuente en botones */
     }
 }
+
+
+                 @media (max-width:974px) {
+                    table {
+
+                        grid-column: 1/6;
+                        display: block;
+                        overflow-x: auto;
+                        white-space: nowrap;
+
+                    }
+                }
