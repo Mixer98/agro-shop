@@ -144,7 +144,122 @@ form-groupd{
 
 }
 
+@media ((max-width:1378px)) {
+    
+        #form-container {
+            grid-column: 2/5;
+            grid-row: 3/5;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 15px;
+            padding: 20px;
+            margin: 50px;
+            background-color: rgba(240, 234, 210);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #proveedor{
+
+
+            grid-column: 2/3;
+            grid-row: 5/6;
+
+
+        }
+
+
+        #marca{
+
+
+            margin: 10px ;
+
+        }
+
+        .form-group {
+            display: flex;
+
+            padding-right: 10px;
+
+        }
+
+}
+
+
+@media ((max-width:1121px)) {
+
+    #descripcion {
+    grid-column: 2/3;
+    grid-row: 5/7;
+}
+
+#proveedor {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+}
+
+@media ((max-width: 789px)) {
+
+    #form-container {
+        grid-template-columns: 100%;
+          margin-left: 0px;
+            margin-right: 0px;
+
+            border-radius: 0px;
+    }
+
+    .form-group{
+        grid-column: 1/2;
+    }
+
+
+        #descripcion {
+    grid-column: 1;
+    grid-row: 10/11;
+}
+
+#proveedor {
+  
+    grid-row: 11/12;
+}
+}
+
+@media (max-width: 731px) {
+    
+
+    body {
+
+
+
+        grid-template-columns: 1fr;
+
+    }
+
+    #form-container {
+
+        margin-top: 20px;
+        margin-bottom: 0px;
+
+    }
+
+}
+
+
+@media (max-width: 320px) {
+
+    #form-container {
+
+        margin-top: 5px;
+        margin-bottom: 0px;
+
+    }
+    
+}
 
 
   </style>
@@ -272,7 +387,7 @@ form-groupd{
    
 
 
-   <div class="form-group" style=" display: flex;
+   <div id="proveedor" class="form-group" style=" display: flex;
     flex-wrap: wrap; 
     gap: 0px;">
 
