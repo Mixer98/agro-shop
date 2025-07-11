@@ -17,7 +17,7 @@ Servidor local: XAMPP
 
 ## 🌐 Proyecto desplegado
 
-Puedes ver el sitio funcionando aquí 👉 [AgroShop Web](http://proyecto-agroshop.whf.bz)
+Puedes ver el sitio funcionando aquí 👉 [AgroShop Web]([http://proyecto-agroshop.whf.bz](https://proyectoagroshop.free.nf/))
 
 
 ## 🎥 Demo del Proyecto
