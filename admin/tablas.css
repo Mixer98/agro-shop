@@ -6,7 +6,6 @@
 
 table {
     width: 100%; /* La tabla ocupará todo el ancho disponible del contenedor */
-    border-spacing: 8px; /* Ajusta el espaciado entre celdas */
     margin: 0 auto; /* Centra la tabla */
     max-width: 100%; /* Previene que la tabla se expanda más allá del contenedor */
     border-collapse: separate; /* Permite el espaciado entre celdas */

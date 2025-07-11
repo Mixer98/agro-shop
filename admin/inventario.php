@@ -1,3 +1,14 @@
+
+<?php 
+    require 'funciones.php';
+
+session_start();
+   
+verificarsecionAdministrativa();
+ verificarSesion();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
